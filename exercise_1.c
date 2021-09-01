@@ -17,7 +17,7 @@ int main(void)
 		printf("%8.2fl %8.2fl\n", celcius, 9.0 / 5 * celcius + 32);
 	}
 
-	printf("\n 제어변수 => %2d\n", i);
+	printf("\n 제어변수 -> %2d\n", i);
 
 	return 0;
 }
