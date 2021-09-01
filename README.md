@@ -1,1 +1,15 @@
-# C_language_practice
+# C 언어 실습 활동
+이번 1학기동안 배운 C 언어 내용을 복습 + 활용 해볼 것이다. 
+
+**Chapter 07**
+
+1. for 문
+```c
+for (int i = 1; i <= 10; i++)
+{
+printf("%3d", i);
+}
+```
+
+2. 분기문
+
