@@ -123,7 +123,7 @@ for (m = 1; m <= 4; m++)
 	  printf("간접참조 출력 %d\n", *ptrint);  // *ptrint 출력 (* : 가리키는 값을 봄 이라고 생각하면 편함 ex) *ptrint = ptrint가 가리키는 값을 본다 ptrint = &data *ptrint = 100)
 	  
 	  *ptrint = 200;  // ptrint가 가리키는 주소값(&data) 의 변수(100)를 참조, data의 저장값을 200으로 참조.
-	  
+	  ```
 	  
     
     
