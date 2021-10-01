@@ -112,6 +112,18 @@ for (m = 1; m <= 4; m++)
 	   printf("ptrint     %p     %p\n", &ptrint, ptrint); // ptrint가 저장하고 있는 값 : data의 주소값(&data) = ptrint
      ```
     
-    
+- 간접연산자 *
+	- 포인터 변수가 갖는 주소로 그 주소의 원래 변수(data)를 참조 할 수 있다.
+	  
+	  포인터 변수가 가리키고 있는 변수를 참조하려면 간접연산자 * 를 사용한다.
+	    
+	  ```c
+	  int data = 100;
+	  int* ptrint = &data;     // ptrint라는 변수에 data의 주소 저장
+	  printf("간접참조 출력 %d\n", *ptrint);  // *ptrint 출력 (* : 가리키는 값을 봄 이라고 생각하면 편함 ex) *ptrint = ptrint가 가리키는 값을 본다 ptrint = &data *ptrint = 100)
+	  
+	  *ptrint = 200;  // ptrint가 가리키는 주소값(&data) 의 변수(100)를 참조, data의 저장값을 200으로 참조.
+	  
+	  
     
     
