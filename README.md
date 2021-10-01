@@ -76,3 +76,42 @@ for (m = 1; m <= 4; m++)
 
 **Chapter 08**
 1. 포인터 변수와 선언 
+
+- 포인터 변수의 개념과 선언
+  - 포인터 변수는 주소값을 저장하는 변수이다.
+    
+    포인터 변수의 선언 방법은 다음과 같다.
+    
+    자료형 * 포인터 변수 이름
+    ```c
+    int *ptrint;        // int형 변수 ptrint의 주소값을 저장하는 포인터 : int *
+    char *ptrchar;      // char형 변수 ptrchar의 주소값을 저장하는 포인터 : char *
+    double *ptrdouble;  // double형 변수 ptrdouble의 주소값을 저장하는 포인터 : double *
+    ```
+    포인터 변수와 일반 변수의 주소 저장 
+    ```c
+    int data = 100;
+    int *ptrint;     // * : ptrint가 가리키는 값(참조값)을 본다고 생각하면 편함. (100) *ptrint = 100, data = 100
+    
+    ptrint = &data;  // 포인터 변수 ptrint에 data의 주소값 저장 ptrint는 data(주소)를 가리키고 있다.
+    ```
+    
+   - 포인터 변수선언과 주소값 대입
+     
+     ```c
+     int data = 27;
+	   int* ptrint; // 포인터 변수 선언
+
+	   ptrint = &data; // ptrint는 data의 주소값을 가리키고 있는 포인터 변수.
+
+	    // 변수명, 주소값, 저장값 출력
+
+	   printf("변수명		주소값		저장값\n");
+	   printf("-------------------------------------------\n");
+	   printf("  data     %p  %8d\n", &data, data);
+	   printf("ptrint     %p     %p\n", &ptrint, ptrint); // ptrint가 저장하고 있는 값 : data의 주소값(&data) = ptrint
+     ```
+    
+    
+    
+    
